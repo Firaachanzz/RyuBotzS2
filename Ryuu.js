@@ -594,22 +594,22 @@ ${tampilUcapan}
 💐 _*Tahun*_ : ${tahun}
 
 _*Other Menu*_ 💻
-✾ ${prefix}infobot
-✾ ${prefix}donasi
-✾ ${prefix}rules
-✾ ${prefix}speed
-✾ ${prefix}script
-✾ ${prefix}verify
-✾ ${prefix}creator
+あ ${prefix}infobot
+あ ${prefix}donasi
+あ ${prefix}rules
+あ ${prefix}speed
+あ ${prefix}script
+あ ${prefix}verify
+あ ${prefix}creator
 
 _*Group Menu*_ 🌱
-✾ ${prefix}welcome *on/off*
-✾ ${prefix}add *628xxx*
-✾ ${prefix}kick *@tag*
-✾ ${prefix}linkgc
-✾ ${prefix}setppgrup *reply image*
-✾ ${prefix}setnamegrup *text*
-✾ ${prefix}setdesc *text*
+あ ${prefix}welcome *on/off*
+あ ${prefix}add *628xxx*
+あ ${prefix}kick *@tag*
+あ ${prefix}linkgc
+あ ${prefix}setppgrup *reply image*
+あ ${prefix}setnamegrup *text*
+あ ${prefix}setdesc *text*
 
 _*Owner Menu*_ ☕
 ✾ ${prefix}mode
@@ -650,17 +650,17 @@ _*Nulis Menu*_ 📝
 ✾ ${prefix}foliokanan
 
 _*News Menu*_ 🌏
-✾ ${prefix}indonesianews
-✾ ${prefix}sindonews
-✾ ${prefix}kompasnews
-✾ ${prefix}cnbcnews
-✾ ${prefix}okezonenews
-✾ ${prefix}detiknews
-✾ ${prefix}dailynews
-✾ ${prefix}tribunnews
-✾ ${prefix}inews
-✾ ${prefix}cnnnews
-✾ ${prefix}bbcnews
+あ ${prefix}indonesianews
+あ ${prefix}sindonews
+あ ${prefix}kompasnews
+あ ${prefix}cnbcnews
+あ ${prefix}okezonenews
+あ ${prefix}detiknews
+あ ${prefix}dailynews
+あ ${prefix}tribunnews
+あ ${prefix}inews
+あ ${prefix}cnnnews
+あ ${prefix}bbcnews
 
 _*CMD Menu*_ ✉️
 ✾ ${prefix}addcmd *reply sticker*
@@ -681,36 +681,36 @@ _*Convert Menu*_ 💾
 ✾ ${prefix}emoji *reply emoji*
 
 _*Anime Menu*_ ⛩️
-✾ ${prefix}neko
-✾ ${prefix}waifu
-✾ ${prefix}shinobu
-✾ ${prefix}megumin
-✾ ${prefix}bully
-✾ ${prefix}cuddle
-✾ ${prefix}cry
-✾ ${prefix}hug
-✾ ${prefix}awoo
-✾ ${prefix}kiss
-✾ ${prefix}lick
-✾ ${prefix}pat
-✾ ${prefix}smug
-✾ ${prefix}bonk
-✾ ${prefix}yeet
-✾ ${prefix}blush
-✾ ${prefix}smile
-✾ ${prefix}wave
-✾ ${prefix}highfive
-✾ ${prefix}handhold
-✾ ${prefix}nom
-✾ ${prefix}bite
-✾ ${prefix}glomp
-✾ ${prefix}slap
-✾ ${prefix}kill
-✾ ${prefix}happy
-✾ ${prefix}wink
-✾ ${prefix}poke
-✾ ${prefix}dance
-✾ ${prefix}cringe`
+あ ${prefix}neko
+あ ${prefix}waifu
+あ ${prefix}shinobu
+あ ${prefix}megumin
+あ ${prefix}bully
+あ ${prefix}cuddle
+あ ${prefix}cry
+あ ${prefix}hug
+あ ${prefix}awoo
+あ ${prefix}kiss
+あ ${prefix}lick
+あ ${prefix}pat
+あ ${prefix}smug
+あ ${prefix}bonk
+あ ${prefix}yeet
+あ ${prefix}blush
+あ ${prefix}smile
+あ ${prefix}wave
+あ ${prefix}highfive
+あ ${prefix}handhold
+あ ${prefix}nom
+あ ${prefix}bite
+あ ${prefix}glomp
+あ ${prefix}slap
+あ ${prefix}kill
+あ ${prefix}happy
+あ ${prefix}wink
+あ ${prefix}poke
+あ ${prefix}dance
+あ ${prefix}cringe`
 teks =
 `${botname} | Runtime : ${runtime(process.uptime())}\nOwner : ${ownername}`
 Ryuu.sendMessage(from, { contentText: `${menu}`, footerText: `${teks}`, buttons: [{ buttonId: `${prefix}donasi`, buttonText: { displayText: 'DONASI 💵' }, type: 1 },{ buttonId: `${prefix}owner`, buttonText: { displayText: 'OWNER 🌱' }, type: 1 } ], headerType: 'LOCATION', locationMessage: { degreesLatitude: '', degreesLongitude: '', jpegThumbnail: fakeimage, contextInfo: {mentionedJid: [sender]}}}, 'buttonsMessage')
