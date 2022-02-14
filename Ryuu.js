@@ -1,7 +1,7 @@
 /*
- * Selamat di Gunakan🗿☕
+ * Selamat di Gunakan
  * instagram me? : @RyuukaBotz 
- * Jangan Lupa Kasih Creator nya om🗿☕
+ * Jangan Lupa Kasih Creator nya om
  * Note Dari Saya Jika Reupload Izin Ke Creator Dlu Atau Tidak Kasih Credit + Link Video nya... 
 */
 const
@@ -122,7 +122,7 @@ const timeMak = moment().tz('Asia/Makassar').format("HH:mm:ss");
 const timeJay = moment().tz('Asia/Jayapura').format("HH:mm:ss");
 const type = Object.keys(mek.message)[0]
 const cmd = (type === 'conversation' && mek.message.conversation) ? mek.message.conversation : (type == 'imageMessage') && mek.message.imageMessage.caption ? mek.message.imageMessage.caption : (type == 'videoMessage') && mek.message.videoMessage.caption ? mek.message.videoMessage.caption : (type == 'extendedTextMessage') && mek.message.extendedTextMessage.text ? mek.message.extendedTextMessage.text : (type == 'stickerMessage') && (getCmd(mek.message.stickerMessage.fileSha256.toString('hex')) !== null && getCmd(mek.message.stickerMessage.fileSha256.toString('base64')) !== undefined) ? getCmd(mek.message.stickerMessage.fileSha256.toString('base64')) : "".slice(1).trim().split(/ +/).shift().toLowerCase()
-const prefix = /^[°•π÷×¶∆£¢€¥®™=|~!#$%^&.?/\\©^z+*@,;]/.test(cmd) ? cmd.match(/^[°•π÷×¶∆£¢€¥®™=|~!#$%^&.?/\\©^z+*,;]/gi) : '#'
+const prefix = /^[���׶������=|~!#$%^&.?/\\�^z+*@,;]/.test(cmd) ? cmd.match(/^[���׶������=|~!#$%^&.?/\\�^z+*,;]/gi) : '#'
 const body = (type === 'listResponseMessage' && mek.message.listResponseMessage.title) ? mek.message.listResponseMessage.title : (type === 'buttonsResponseMessage' && mek.message.buttonsResponseMessage.selectedButtonId) ? mek.message.buttonsResponseMessage.selectedButtonId : (type === 'conversation' && mek.message.conversation.startsWith(prefix)) ? mek.message.conversation : (type == 'imageMessage') && mek.message.imageMessage.caption.startsWith(prefix) ? mek.message.imageMessage.caption : (type == 'videoMessage') && mek.message.videoMessage.caption.startsWith(prefix) ? mek.message.videoMessage.caption : (type == 'extendedTextMessage') && mek.message.extendedTextMessage.text.startsWith(prefix) ? mek.message.extendedTextMessage.text : (type == 'stickerMessage') && (getCmd(mek.message.stickerMessage.fileSha256.toString('base64')) !== null && getCmd(mek.message.stickerMessage.fileSha256.toString('base64')) !== undefined) ? getCmd(mek.message.stickerMessage.fileSha256.toString('base64')) : ""
 budy = (type === 'conversation') ? mek.message.conversation : (type === 'extendedTextMessage') ? mek.message.extendedTextMessage.text : ''
 const mentionByTag = type == "extendedTextMessage" && mek.message.extendedTextMessage.contextInfo != null ? mek.message.extendedTextMessage.contextInfo.mentionedJid : []
@@ -176,7 +176,7 @@ bio_user = '-'
 mess = {
 wait: 'Tunggu Sedang Di Proses',
 eror: 'Terjadi Kesalahan',
-success: 'Success️',
+success: 'Success',
 error: {
 stick: 'Khusus Sticker',
 Iv: 'Link Invalid!'
@@ -255,7 +255,7 @@ let settingstatus = 0;
 if (new Date() * 1 - settingstatus > 1000) {
 let _uptime = process.uptime() * 1000;
 let uptimer = clockString(_uptime);
-await Ryuu.setStatus(`${botname} | ⏲️ Runtime : ${uptimer}`).catch((_) => _);
+await Ryuu.setStatus(`${botname} |  Runtime : ${uptimer}`).catch((_) => _);
 settingstatus = new Date() * 1;
 }}
 //Ucapan & Dll
@@ -303,30 +303,30 @@ case 10: bulan = "November"; break;
 case 11: bulan = "Desember"; break;
 }
 switch(jamss){
-case 0: jamss = '𝐒𝐞𝐥𝐚𝐦𝐚𝐭 𝐌𝐚𝐥𝐚𝐦 🌃'; break;
-case 1: jamss = '𝐒𝐞𝐥𝐚𝐦𝐚𝐭 𝐌𝐚𝐥𝐚𝐦 🌃'; break;
-case 2: jamss = '𝐒𝐞𝐥𝐚𝐦𝐚𝐭 𝐌𝐚𝐥𝐚𝐦 🌃'; break;
-case 3: jamss = '𝐒𝐞𝐥𝐚𝐦𝐚𝐭 𝐏𝐚𝐠𝐢 🎑'; break;
-case 4: jamss = '𝐒𝐞𝐥𝐚𝐦𝐚𝐭 𝐏𝐚𝐠𝐢 🎑'; break; 
-case 5: jamss = '𝐒𝐞𝐥𝐚𝐦𝐚𝐭 𝐏𝐚𝐠𝐢 🎑'; break;
-case 6: jamss = '𝐒𝐞𝐥𝐚𝐦𝐚𝐭 𝐏𝐚𝐠𝐢 🎑'; break;
-case 7: jamss = '𝐒𝐞𝐥𝐚𝐦𝐚𝐭 𝐏𝐚𝐠𝐢 🎑'; break;
-case 8: jamss = '𝐒𝐞𝐥𝐚𝐦𝐚𝐭 𝐏𝐚𝐠𝐢 🏞️'; break;
-case 9: jamss = '𝐒𝐞𝐥𝐚𝐦𝐚𝐭 𝐏𝐚𝐠𝐢 🏞️'; break;
-case 10: jamss = '𝐒𝐞𝐥𝐚𝐦𝐚𝐭 𝐏𝐚𝐠𝐢 🏞️'; break;
-case 11: jamss = '𝐒𝐞𝐥𝐚𝐦𝐚𝐭 𝐒𝐢𝐚𝐧𝐠 🏞️'; break; 
-case 12: jamss = '𝐒𝐞𝐥𝐚𝐦𝐚𝐭 𝐒𝐢𝐚𝐧𝐠 🏞️'; break;
-case 13: jamss = '𝐒𝐞𝐥𝐚𝐦𝐚𝐭 𝐒𝐢𝐚𝐧𝐠 🏞️'; break;
-case 14: jamss = '𝐒𝐞𝐥𝐚𝐦𝐚𝐭 𝐒𝐢𝐚𝐧𝐠 🏞️'; break;
-case 15: jamss = '𝐒𝐞𝐥𝐚𝐦𝐚𝐭 𝐒𝐨𝐫𝐞 🌅'; break;
-case 16: jamss = '𝐒𝐞𝐥𝐚𝐦𝐚𝐭 𝐒𝐨𝐫𝐞 🌅'; break;
-case 17: jamss = '𝐒𝐞𝐥𝐚𝐦𝐚𝐭 𝐒𝐨𝐫𝐞 🌅'; break;
-case 18: jamss = '𝐒𝐞𝐥𝐚𝐦𝐚𝐭 𝐌𝐚𝐥𝐚𝐦 🌌'; break; 
-case 19: jamss = '𝐒𝐞𝐥𝐚𝐦𝐚𝐭 𝐌𝐚𝐥𝐚𝐦 🌌'; break;
-case 20: jamss = '𝐒𝐞𝐥𝐚𝐦𝐚𝐭 𝐌𝐚𝐥𝐚𝐦 🌌'; break;
-case 21: jamss = '𝐒𝐞𝐥𝐚𝐦𝐚𝐭 𝐌𝐚𝐥𝐚𝐦 🌌'; break;
-case 22: jamss = '𝐒𝐞𝐥𝐚𝐦𝐚𝐭 𝐌𝐚𝐥𝐚𝐦 🌌'; break; 
-case 23: jamss = '𝐒𝐞𝐥𝐚𝐦𝐚𝐭 𝐌𝐚𝐥𝐚𝐦 🌌'; break;
+case 0: jamss = '  '; break;
+case 1: jamss = '  '; break;
+case 2: jamss = '  '; break;
+case 3: jamss = '  '; break;
+case 4: jamss = '  '; break; 
+case 5: jamss = '  '; break;
+case 6: jamss = '  '; break;
+case 7: jamss = '  '; break;
+case 8: jamss = '  '; break;
+case 9: jamss = '  '; break;
+case 10: jamss = '  '; break;
+case 11: jamss = '  '; break; 
+case 12: jamss = '  '; break;
+case 13: jamss = '  '; break;
+case 14: jamss = '  '; break;
+case 15: jamss = '  '; break;
+case 16: jamss = '  '; break;
+case 17: jamss = '  '; break;
+case 18: jamss = '  '; break; 
+case 19: jamss = '  '; break;
+case 20: jamss = '  '; break;
+case 21: jamss = '  '; break;
+case 22: jamss = '  '; break; 
+case 23: jamss = '  '; break;
 }
 var tampilUcapan = "" + jamss;
 var tampilTanggal = hari + " "+ taanggal + " " + bulan + " " + tahun;
@@ -363,7 +363,7 @@ const isUser = cekUser(sender)
 const isRegistered = checkRegisteredUser(sender)
 const daftar1 = `Hai ${pushname}\nKamu Belum Terverifikasi Pencet Button Di Bawah Ini Untuk Verifikasi!!`
 const daftar2 = '```Klik Tombol Di Bawah Untuk Verify Kak```'
-const daftar3 = [{buttonId: `${prefix}verify`,buttonText: {displayText: `🌱 VERIFY 🌱`,},type: 1,},]
+const daftar3 = [{buttonId: `${prefix}verify`,buttonText: {displayText: ` VERIFY `,},type: 1,},]
 const createSerial = (size) => {
 return crypto.randomBytes(size).toString('hex').slice(0, size)
 }
@@ -519,7 +519,7 @@ sendButMessage(from, ` *GROUP LINK DETECTED*\n\nMaaf Kamu Akan Di Kick Dari Grou
 {
 buttonId: `${prefixa}antilink disable`,
 buttonText: {
-displayText: `Disable Antilink🌱`,
+displayText: `Disable Antilink`,
 },
 type: 1,
 }]);
@@ -570,150 +570,150 @@ var p = await Ryuu.getStatus(`${sender}`, MessageType.text)
 menu =
 `*${tampilUcapan} @${sender.split('@')[0]}*
 
-*Info Bot* 📱
-👤 _*Owner Name*_ : ${ownername}
-🤖 _*Bot Name*_ : ${botname}
-💻 _*Speed*_ : ${processsTime(mek.messageTimestamp.low, moment())}s
-📱 _*Runtime*_ : ${runtime(process.uptime())}
-🗃 _*Status*_ : ${public? `Public Mode`:`Self Mode`}
+*Info Bot* 
+ _*Owner Name*_ : ${ownername}
+ _*Bot Name*_ : ${botname}
+ _*Speed*_ : ${processsTime(mek.messageTimestamp.low, moment())}s
+ _*Runtime*_ : ${runtime(process.uptime())}
+ _*Status*_ : ${public? `Public Mode`:`Self Mode`}
 
-*Info User* 👤
-🌱 _*Name User*_ : ${pushname}
-🏷 _*Bio User*_ : ${p.status==undefined?`Not Found`:p.status}
-📱 _*Nomor*_ : @${sender.split('@')[0]}
+*Info User* 
+ _*Name User*_ : ${pushname}
+ _*Bio User*_ : ${p.status==undefined?`Not Found`:p.status}
+ _*Nomor*_ : @${sender.split('@')[0]}
 
-*Indonesia Time* 🌄
-🕐 _*Wib*_ : ${timeWib}
-🕑 _*Wita*_ : ${timeWita}
-🕒 _*Wit*_ : ${timeWit}
+*Indonesia Time* 
+ _*Wib*_ : ${timeWib}
+ _*Wita*_ : ${timeWita}
+ _*Wit*_ : ${timeWit}
 
-*To Day* 🌱
+*To Day* 
 ${tampilUcapan}
-🌥 _*Hari*_ : ${hari}
-🌚 _*Bulan*_ : ${bulan}
-💐 _*Tahun*_ : ${tahun}
+ _*Hari*_ : ${hari}
+ _*Bulan*_ : ${bulan}
+ _*Tahun*_ : ${tahun}
 
-_*Other Menu*_ 💻
-あ ${prefix}infobot
-あ ${prefix}donasi
-あ ${prefix}rules
-あ ${prefix}speed
-あ ${prefix}script
-あ ${prefix}verify
-あ ${prefix}creator
+_*Other Menu*_ 
+ ${prefix}infobot
+ ${prefix}donasi
+ ${prefix}rules
+ ${prefix}speed
+ ${prefix}script
+ ${prefix}verify
+ ${prefix}creator
 
-_*Group Menu*_ 🌱
-あ ${prefix}welcome *on/off*
-あ ${prefix}add *628xxx*
-あ ${prefix}kick *@tag*
-あ ${prefix}linkgc
-あ ${prefix}setppgrup *reply image*
-あ ${prefix}setnamegrup *text*
-あ ${prefix}setdesc *text*
+_*Group Menu*_ 
+ ${prefix}welcome *on/off*
+ ${prefix}add *628xxx*
+ ${prefix}kick *@tag*
+ ${prefix}linkgc
+ ${prefix}setppgrup *reply image*
+ ${prefix}setnamegrup *text*
+ ${prefix}setdesc *text*
 
-_*Owner Menu*_ ☕
-✾ ${prefix}mode
-✾ ${prefix}public
-✾ ${prefix}self
-✾ ${prefix}owner
-✾ ${prefix}delete
-✾ ${prefix}bc *text*
-✾ ${prefix}setnamabot
-✾ ${prefix}setbiobot
+_*Owner Menu*_ 
+ ${prefix}mode
+ ${prefix}public
+ ${prefix}self
+ ${prefix}owner
+ ${prefix}delete
+ ${prefix}bc *text*
+ ${prefix}setnamabot
+ ${prefix}setbiobot
 
-_*Search Menu*_ 🔎
-✾ ${prefix}pinterest *search*
+_*Search Menu*_ 
+ ${prefix}pinterest *search*
 
-_*Cecan Menu*_ 👧
-✾ ${prefix}cecanvietnam
-✾ ${prefix}cecanmalaysia
-✾ ${prefix}cecankorea
-✾ ${prefix}cecanindonesia
-✾ ${prefix}cecanjapan
-✾ ${prefix}cecanthailand
-✾ ${prefix}cecanchina
+_*Cecan Menu*_ 
+ ${prefix}cecanvietnam
+ ${prefix}cecanmalaysia
+ ${prefix}cecankorea
+ ${prefix}cecanindonesia
+ ${prefix}cecanjapan
+ ${prefix}cecanthailand
+ ${prefix}cecanchina
 
-_*Asupan Menu*_ 😍
-✾ ${prefix}asupancecan
-✾ ${prefix}asupanhijaber
-✾ ${prefix}asupansantuy
-✾ ${prefix}asupanukhti
-✾ ${prefix}asupanbocil
-✾ ${prefix}asupanghea
-✾ ${prefix}asupanrika
+_*Asupan Menu*_ 
+ ${prefix}asupancecan
+ ${prefix}asupanhijaber
+ ${prefix}asupansantuy
+ ${prefix}asupanukhti
+ ${prefix}asupanbocil
+ ${prefix}asupanghea
+ ${prefix}asupanrika
 
-_*Nulis Menu*_ 📝
-✾ ${prefix}nulis
-✾ ${prefix}nuliskiri
-✾ ${prefix}nuliskanan
-✾ ${prefix}foliokiri
-✾ ${prefix}foliokanan
+_*Nulis Menu*_ 
+ ${prefix}nulis
+ ${prefix}nuliskiri
+ ${prefix}nuliskanan
+ ${prefix}foliokiri
+ ${prefix}foliokanan
 
-_*News Menu*_ 🌏
-あ ${prefix}indonesianews
-あ ${prefix}sindonews
-あ ${prefix}kompasnews
-あ ${prefix}cnbcnews
-あ ${prefix}okezonenews
-あ ${prefix}detiknews
-あ ${prefix}dailynews
-あ ${prefix}tribunnews
-あ ${prefix}inews
-あ ${prefix}cnnnews
-あ ${prefix}bbcnews
+_*News Menu*_ 
+ ${prefix}indonesianews
+ ${prefix}sindonews
+ ${prefix}kompasnews
+ ${prefix}cnbcnews
+ ${prefix}okezonenews
+ ${prefix}detiknews
+ ${prefix}dailynews
+ ${prefix}tribunnews
+ ${prefix}inews
+ ${prefix}cnnnews
+ ${prefix}bbcnews
 
-_*CMD Menu*_ ✉️
-✾ ${prefix}addcmd *reply sticker*
-✾ ${prefix}delcmd *reply sticker*
-✾ ${prefix}listcmd
+_*CMD Menu*_ 
+ ${prefix}addcmd *reply sticker*
+ ${prefix}delcmd *reply sticker*
+ ${prefix}listcmd
 
-_*Download Menu*_ 🗃
-✾ ${prefix}ytmp3 *url*
-✾ ${prefix}ytmp4 *url*
+_*Download Menu*_ 
+ ${prefix}ytmp3 *url*
+ ${prefix}ytmp4 *url*
 
-_*Convert Menu*_ 💾
-✾ ${prefix}sticker *reply*
-✾ ${prefix}attp *text*
-✾ ${prefix}ttp *text*
-✾ ${prefix}toimg *reply*
-✾ ${prefix}tourl *reply*
-✾ ${prefix}smeme *reply image & text*
-✾ ${prefix}emoji *reply emoji*
+_*Convert Menu*_ 
+ ${prefix}sticker *reply*
+ ${prefix}attp *text*
+ ${prefix}ttp *text*
+ ${prefix}toimg *reply*
+ ${prefix}tourl *reply*
+ ${prefix}smeme *reply image & text*
+ ${prefix}emoji *reply emoji*
 
-_*Anime Menu*_ ⛩️
-あ ${prefix}neko
-あ ${prefix}waifu
-あ ${prefix}shinobu
-あ ${prefix}megumin
-あ ${prefix}bully
-あ ${prefix}cuddle
-あ ${prefix}cry
-あ ${prefix}hug
-あ ${prefix}awoo
-あ ${prefix}kiss
-あ ${prefix}lick
-あ ${prefix}pat
-あ ${prefix}smug
-あ ${prefix}bonk
-あ ${prefix}yeet
-あ ${prefix}blush
-あ ${prefix}smile
-あ ${prefix}wave
-あ ${prefix}highfive
-あ ${prefix}handhold
-あ ${prefix}nom
-あ ${prefix}bite
-あ ${prefix}glomp
-あ ${prefix}slap
-あ ${prefix}kill
-あ ${prefix}happy
-あ ${prefix}wink
-あ ${prefix}poke
-あ ${prefix}dance
-あ ${prefix}cringe`
+_*Anime Menu*_ 
+ ${prefix}neko
+ ${prefix}waifu
+ ${prefix}shinobu
+ ${prefix}megumin
+ ${prefix}bully
+ ${prefix}cuddle
+ ${prefix}cry
+ ${prefix}hug
+ ${prefix}awoo
+ ${prefix}kiss
+ ${prefix}lick
+ ${prefix}pat
+ ${prefix}smug
+ ${prefix}bonk
+ ${prefix}yeet
+ ${prefix}blush
+ ${prefix}smile
+ ${prefix}wave
+ ${prefix}highfive
+ ${prefix}handhold
+ ${prefix}nom
+ ${prefix}bite
+ ${prefix}glomp
+ ${prefix}slap
+ ${prefix}kill
+ ${prefix}happy
+ ${prefix}wink
+ ${prefix}poke
+ ${prefix}dance
+ ${prefix}cringe`
 teks =
 `${botname} | Runtime : ${runtime(process.uptime())}\nOwner : ${ownername}`
-Ryuu.sendMessage(from, { contentText: `${menu}`, footerText: `${teks}`, buttons: [{ buttonId: `${prefix}donasi`, buttonText: { displayText: 'DONASI 💵' }, type: 1 },{ buttonId: `${prefix}owner`, buttonText: { displayText: 'OWNER 🌱' }, type: 1 } ], headerType: 'LOCATION', locationMessage: { degreesLatitude: '', degreesLongitude: '', jpegThumbnail: fakeimage, contextInfo: {mentionedJid: [sender]}}}, 'buttonsMessage')
+Ryuu.sendMessage(from, { contentText: `${menu}`, footerText: `${teks}`, buttons: [{ buttonId: `${prefix}donasi`, buttonText: { displayText: 'DONASI ' }, type: 1 },{ buttonId: `${prefix}owner`, buttonText: { displayText: 'OWNER ' }, type: 1 } ], headerType: 'LOCATION', locationMessage: { degreesLatitude: '', degreesLongitude: '', jpegThumbnail: fakeimage, contextInfo: {mentionedJid: [sender]}}}, 'buttonsMessage')
 break
 
 //Fitur Owner
@@ -752,7 +752,7 @@ Ryuu.sendMessage(from, {displayName: `CreatorNya Bot ${botname}`, vcard: vcard2}
 break
 case 'mode':
 if (!isOwner && !mek.key.fromMe) return reply(mess.only.owner) 
-buttonss = [{buttonId: `${prefix}public`, buttonText: {displayText: 'PUBLIC 🌱'}, type: 1},{buttonId: `${prefix}self`, buttonText: {displayText: 'SELF 🍂'}, type: 1}]
+buttonss = [{buttonId: `${prefix}public`, buttonText: {displayText: 'PUBLIC '}, type: 1},{buttonId: `${prefix}self`, buttonText: {displayText: 'SELF '}, type: 1}]
 const buMess = {
 contentText: "SELF/PUBLIC",
 footerText: 'Silahkan Pilih Saah Satu',
@@ -763,15 +763,15 @@ await Ryuu.sendMessage(from, buMess, MessageType.buttonsMessage, {quoted: mek})
 break
 case 'self':
 if (!isOwner && !mek.key.fromMe) return reply(mess.only.owner) 
- if(!public)return reply('*_Fitur Itu Sudah Di Aktifkan🌱_*')
+ if(!public)return reply('*_Fitur Itu Sudah Di Aktifkan_*')
 public = false
-return reply(`Succes Mode Self 🍂\nDimana Hanya Owner & Bot Yang Bisa Menggunakan Bot`,text)
+return reply(`Succes Mode Self \nDimana Hanya Owner & Bot Yang Bisa Menggunakan Bot`,text)
 break
 case 'public':
 if (!isOwner && !mek.key.fromMe) return reply(mess.only.owner) 
-if (public)return reply('*_Fitur Itu Sudah Di Aktifkan🌱_*')
+if (public)return reply('*_Fitur Itu Sudah Di Aktifkan_*')
 public = true
-return reply(`Succes Mode Public 🌱\nDimana Semua User Bisa Menggunakan Bot`, text)
+return reply(`Succes Mode Public \nDimana Semua User Bisa Menggunakan Bot`, text)
 break
 case 'bc': case 'broadcast':
 if (!isOwner && !mek.key.fromMe) return reply(mess.only.owner) 
@@ -781,17 +781,17 @@ if (isMedia && !Ryuu.message.videoMessage || isQuotedImage) {
 const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(Ryuu).replace('quotedM','m')).message.extendedTextMessage.contextInfo : Ryuu
 bc100 = await Ryuu.downloadMediaMessage(encmedia)
 for (let _ of anu100) {
-Ryuu.sendMessage(_.jid, bc100, image, {quoted: ftrol, caption: `*「 PESAN SIARAN BOT 」*\n\n${body.slice(4)}`})
+Ryuu.sendMessage(_.jid, bc100, image, {quoted: ftrol, caption: `* PESAN SIARAN BOT *\n\n${body.slice(4)}`})
 }
 reply('Suksess broadcast')
 } else {
 for (let _ of anu100) {
 Ryuu.sendMessage(_.jid, 
-{"contentText": `*「 broadcast bot 」*\n\n${body.slice(4)}`,
+{"contentText": `* broadcast bot *\n\n${body.slice(4)}`,
 "footerText": `${tampilTanggal}`, 
 "buttons": [
 {"buttonId": `${prefix}menu`,
-"buttonText": {"displayText": "MENU 🌱"
+"buttonText": {"displayText": "MENU "
 },"type": "RESPONSE"}
 ], "headerType": 'LOCATION',
 locationMessage: { degreesLatitude: '',
@@ -841,7 +841,7 @@ giid.push(id)
 }
 const { wa_version, mcc, mnc, os_version, device_manufacturer, device_model } = Ryuu.user.phone
 nupe = ownernumber + '@s.whatsapp.net'
-menu = `*BOT STATISTIC* 💻
+menu = `*BOT STATISTIC* 
 Botname : ${botname}
 Owner : @${nupe.split("@")[0]}
 Prefix : Multi
@@ -852,7 +852,7 @@ Group Chat : ${giid.length}
 Total Chat : ${totalchat.length}
 Total Block : ${blocked.length}
 
-*PHONE STATISTIC*📱
+*PHONE STATISTIC*
 Whatsapp Ver. : ${wa_version}
 Ram Usage : ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
 Mcc : ${mcc}
@@ -863,7 +863,7 @@ Versi HP : ${device_model}
 Browser : ${Ryuu.browserDescription}`
 teks =
 `${botname} | Runtime : ${runtime(process.uptime())}\nOwner : ${ownername}`
-Ryuu.sendMessage(from, { contentText: `${menu}`, footerText: `${teks}`, buttons: [{ buttonId: `${prefix}donasi`, buttonText: { displayText: 'DONASI 💵' }, type: 1 },{ buttonId: `${prefix}owner`, buttonText: { displayText: 'OWNER 🌱' }, type: 1 } ], headerType: 'LOCATION', locationMessage: { degreesLatitude: '', degreesLongitude: '', jpegThumbnail: fakeimage, contextInfo: {mentionedJid: [sender]}}}, 'buttonsMessage')
+Ryuu.sendMessage(from, { contentText: `${menu}`, footerText: `${teks}`, buttons: [{ buttonId: `${prefix}donasi`, buttonText: { displayText: 'DONASI ' }, type: 1 },{ buttonId: `${prefix}owner`, buttonText: { displayText: 'OWNER ' }, type: 1 } ], headerType: 'LOCATION', locationMessage: { degreesLatitude: '', degreesLongitude: '', jpegThumbnail: fakeimage, contextInfo: {mentionedJid: [sender]}}}, 'buttonsMessage')
 } catch (e){
 reply(`${e}`)
 }
@@ -874,24 +874,24 @@ case 'speed':
 if (!isUser) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
 timestampe = speed();
 latensie = speed() - timestampe
-reply(`_*Speed Test*_\nMerespon dalam ${latensie.toFixed(4)} Sec 💬`)
+reply(`_*Speed Test*_\nMerespon dalam ${latensie.toFixed(4)} Sec `)
 break
 case 'sc':
 case 'script':
 if (!isUser) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: troli}) 
-menu = `*Info Script* 🔎\n📚 Script Made By Ryuuka Botz\n🌱 Version : 1.0.0\n📈 Last Update : 11/2/2022\n📩 Link Sc : https://youtube.com/channel/UCjxavxEQa1Wd9A4J9tOmATA\n♨️ Sumber Script : Ryuuka Botz\n\n🍁 Subscribe For More Update`
+menu = `*Info Script* \n Script Made By Ryuuka Botz\n Version : 1.0.0\n Last Update : 11/2/2022\n Link Sc : https://youtube.com/channel/UCjxavxEQa1Wd9A4J9tOmATA\n Sumber Script : Ryuuka Botz\n\n Subscribe For More Update`
 teks =`${botname} | Runtime : ${runtime(process.uptime())}\nOwner : ${ownername}`
-Ryuu.sendMessage(from, { contentText: `${menu}`, footerText: `${teks}`, buttons: [{ buttonId: `${prefix}menu`, buttonText: { displayText: 'MENU 💌' }, type: 1 },{ buttonId: `${prefix}owner`, buttonText: { displayText: 'OWNER 👤' }, type: 1 } ], headerType: 'LOCATION', locationMessage: { degreesLatitude: '', degreesLongitude: '', jpegThumbnail: fakeimage, contextInfo: {mentionedJid: [sender]}}}, 'buttonsMessage')
+Ryuu.sendMessage(from, { contentText: `${menu}`, footerText: `${teks}`, buttons: [{ buttonId: `${prefix}menu`, buttonText: { displayText: 'MENU ' }, type: 1 },{ buttonId: `${prefix}owner`, buttonText: { displayText: 'OWNER ' }, type: 1 } ], headerType: 'LOCATION', locationMessage: { degreesLatitude: '', degreesLongitude: '', jpegThumbnail: fakeimage, contextInfo: {mentionedJid: [sender]}}}, 'buttonsMessage')
 break
 case 'rules':
 if (!isUser) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
 menu =
-`*RULES*📖
+`*RULES*
 1. Tolong Gunakan Delay 5 Detik Untuk Menggukan BOT
 2. Gunakan Dengan Bijak.
 
 
-*SNK*📄
+*SNK*
 1. Data Whatsapp Anda Akan Kami Simpan Di Server Kami Selama BOT Aktif.
 2. Data Anda Akan Di Hapus Ketika BOT OFFLINE
 3. Kami Tidak Menyimpan Gambar, Video, File, Audio, Dan Dokumen Yang Anda Kirim
@@ -899,18 +899,18 @@ menu =
 5. Jika Menemukan BUG/ERROR Silahkan Langsung Lapor Ke OWNER BOT!
 
 
-*ATTENTION*❗
+*ATTENTION*
 *KONSEKUENSI BILA MELANGGAR RULES*
 - Bot Akan Memblokir Nomor Anda.
 - Anda Tidak Akan Bisa Mengakses Bot Lagi.
 - Mengeksploitasi Terhadap bot.
 Sanksi: *PERMANENT BLOCK*`
 teks =`${botname} | Runtime : ${runtime(process.uptime())}\nOwner : ${ownername}`
-Ryuu.sendMessage(from, { contentText: `${menu}`, footerText: `${teks}`, buttons: [{ buttonId: `${prefix}donasi`, buttonText: { displayText: 'DONASI 💵' }, type: 1 },{ buttonId: `${prefix}owner`, buttonText: { displayText: 'OWNER 🌱' }, type: 1 } ], headerType: 'LOCATION', locationMessage: { degreesLatitude: '', degreesLongitude: '', jpegThumbnail: fakeimage, contextInfo: {mentionedJid: [sender]}}}, 'buttonsMessage')
+Ryuu.sendMessage(from, { contentText: `${menu}`, footerText: `${teks}`, buttons: [{ buttonId: `${prefix}donasi`, buttonText: { displayText: 'DONASI ' }, type: 1 },{ buttonId: `${prefix}owner`, buttonText: { displayText: 'OWNER ' }, type: 1 } ], headerType: 'LOCATION', locationMessage: { degreesLatitude: '', degreesLongitude: '', jpegThumbnail: fakeimage, contextInfo: {mentionedJid: [sender]}}}, 'buttonsMessage')
 break
 case 'donasi':
 if (!isUser) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
-reply(`*TERIMA KASIH SUDAH MAU DONASI 🤗*\n\n*Q.S Az-Zalzalah Ayat 7 :*\n\nفَمَنْ يَّعْمَلْ مِثْقَالَ ذَرَّةٍ خَيْرًا يَّرَهٗۚ\n\nArtinya : Maka barangsiapa \nmengerjakan kebaikan seberat\nzarrah, niscaya dia akan melihat \n(balasan)nya,\n\ncontact owner :\nwa.me/${ownernumber} (Owner)`) 
+reply(`*TERIMA KASIH SUDAH MAU DONASI *\n\n*Q.S Az-Zalzalah Ayat 7 :*\n\n     \n\nArtinya : Maka barangsiapa \nmengerjakan kebaikan seberat\nzarrah, niscaya dia akan melihat \n(balasan)nya,\n\ncontact owner :\nwa.me/${ownernumber} (Owner)`) 
 break
 case 'verify': case 'daftar':
  if (isUser) return reply('Kamu sudah terdaftar di dalam database')
@@ -923,13 +923,13 @@ teks = `_*Verifikasi Succes*_\n\n*Nama :* ${pushname}\n*Nomor :* @${sender.split
 let papako = [{
 "buttonId": `${prefix}menu`,
 "buttonText": {
-"displayText": "MENU 🖼"
+"displayText": "MENU "
 },
 "type": "RESPONSE"
 },{
 "buttonId": `${prefix}owner`,
 "buttonText": {
-"displayText": "OWNER 🌱"
+"displayText": "OWNER "
 },
 "type": "RESPONSE"
 }]
@@ -1102,7 +1102,7 @@ buffer = await getBuffer(`https://api.xteam.xyz/attp?file&text=${encodeURI(q)}`)
 Ryuu.sendMessage(from, buffer, sticker, { quoted: mek })
 break
 case 'emoji':case 'semoji':
-if (!q) return reply(`Example : ${prefix + command} 😂`)
+if (!q) return reply(`Example : ${prefix + command} `)
 hex2 = args.join(' ') 
 emoji.get(`${hex2}`).then(emoji => {
 teks = `${emoji.images[4].url}`
@@ -1138,7 +1138,7 @@ sendButImage(from, pll, `Next Untuk Melanjutkan`, kon, [
 {
 buttonId: `${prefix}${command}`,
 buttonText: {
-displayText: `NEXT ⏩`,
+displayText: `SELANJUTNYA `,
 },
 type: 1,
 },
@@ -1151,98 +1151,98 @@ if (!isUser) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftro
 huft = await fetchJson(`https://api-ryu.herokuapp.com/api/cewe/vietnam?apikey=${ryukey}`)
 reply(mess.wait) 
 goo = await getBuffer(huft.result.url)
-Ryuu.sendMessage(from, goo, image, {quoted: ftrol, caption: 'Succes By : © Ryuuka Botz'})
+Ryuu.sendMessage(from, goo, image, {quoted: ftrol, caption: 'Succes By : � Ryuuka Botz'})
 break
 case 'cecanmalaysia':
 if (!isUser) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
 huft = await fetchJson(`https://api-ryu.herokuapp.com/api/cewe/malaysia?apikey=${ryukey}`)
 reply(mess.wait) 
 goo = await getBuffer(huft.result.url)
-Ryuu.sendMessage(from, goo, image, {quoted: ftrol, caption: 'Succes By : © Ryuuka Botz'})
+Ryuu.sendMessage(from, goo, image, {quoted: ftrol, caption: 'Succes By : � Ryuuka Botz'})
 break
 case 'cecankorea':
 if (!isUser) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
 huft = await fetchJson(`https://api-ryu.herokuapp.com/api/cewe/korea?apikey=${ryukey}`)
 reply(mess.wait) 
 goo = await getBuffer(huft.result.url)
-Ryuu.sendMessage(from, goo, image, {quoted: ftrol, caption: 'Succes By : © Ryuuka Botz'})
+Ryuu.sendMessage(from, goo, image, {quoted: ftrol, caption: 'Succes By : � Ryuuka Botz'})
 break
 case 'cecanindonesia':
 if (!isUser) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
 huft = await fetchJson(`https://api-ryu.herokuapp.com/api/cewe/indonesia?apikey=RyuBotz`)
 reply(mess.wait) 
 goo = await getBuffer(huft.result.url)
-Ryuu.sendMessage(from, goo, image, {quoted: ftrol, caption: 'Succes By : © Ryuuka Botz'})
+Ryuu.sendMessage(from, goo, image, {quoted: ftrol, caption: 'Succes By : � Ryuuka Botz'})
 break
 case 'cecanjapan':
 if (!isUser) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
 huft = await fetchJson(`https://api-ryu.herokuapp.com/api/cewe/japan?apikey=${ryukey}`)
 reply(mess.wait) 
 goo = await getBuffer(huft.result.url)
-Ryuu.sendMessage(from, goo, image, {quoted: ftrol, caption: 'Succes By : © Ryuuka Botz'})
+Ryuu.sendMessage(from, goo, image, {quoted: ftrol, caption: 'Succes By : � Ryuuka Botz'})
 break
 case 'cecanthailand':
 if (!isUser) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
 huft = await fetchJson(`https://api-ryu.herokuapp.com/api/cewe/thailand?apikey=${ryukey}`)
 reply(mess.wait) 
 goo = await getBuffer(huft.result.url)
-Ryuu.sendMessage(from, goo, image, {quoted: ftrol, caption: 'Succes By : © Ryuuka Botz'})
+Ryuu.sendMessage(from, goo, image, {quoted: ftrol, caption: 'Succes By : � Ryuuka Botz'})
 break
 case 'cecanchina':
 if (!isUser) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
 huft = await fetchJson(`https://api-ryu.herokuapp.com/api/cewe/china?apikey=${ryukey}`)
 reply(mess.wait) 
 goo = await getBuffer(huft.result.url)
-Ryuu.sendMessage(from, goo, image, {quoted: ftrol, caption: 'Succes By : © Ryuuka Botz'})
+Ryuu.sendMessage(from, goo, image, {quoted: ftrol, caption: 'Succes By : � Ryuuka Botz'})
 break
 case 'asupancecan':
 if (!isUser) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
 huft = await fetchJson(`https://api-ryu.herokuapp.com/api/asupan/cecan?apikey=RyuBotz`)
 reply(mess.wait) 
 goo = await getBuffer(huft.result.url)
-Ryuu.sendMessage(from, goo, image, {quoted: ftrol, caption: 'Succes By : © Ryuuka Botz'})
+Ryuu.sendMessage(from, goo, image, {quoted: ftrol, caption: 'Succes By : � Ryuuka Botz'})
 break
 case 'asupanhijaber':
 if (!isUser) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
 huft = await fetchJson(`https://api-ryu.herokuapp.com/api/asupan/hijaber?apikey=${ryukey}`)
 reply(mess.wait) 
 goo = await getBuffer(huft.result.url)
-Ryuu.sendMessage(from, goo, image, {quoted: ftrol, caption: 'Succes By : © Ryuuka Botz'})
+Ryuu.sendMessage(from, goo, image, {quoted: ftrol, caption: 'Succes By : � Ryuuka Botz'})
 break
 case 'asupansantuy':
 if (!isUser) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
 ini = await fetchJson(`https://api-ryu.herokuapp.com/api/asupan/santuy?apikey=${ryukey}`)
 reply(mess.wait) 
 buffer = await getBuffer(ini.result.url)
-Ryuu.sendMessage(from, buffer, video, {quoted: ftrol, caption: 'Succes By : © Ryuuka Botz'})
+Ryuu.sendMessage(from, buffer, video, {quoted: ftrol, caption: 'Succes By : � Ryuuka Botz'})
 break
 case 'asupanukhti':
 if (!isUser) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
 ini = await fetchJson(`https://api-ryu.herokuapp.com/api/asupan/ukty?apikey=${ryukey}`)
 reply(mess.wait) 
 buffer = await getBuffer(ini.result.url)
-Ryuu.sendMessage(from, buffer, video, {quoted: ftrol, caption: 'Succes By : © Ryuuka Botz'})
+Ryuu.sendMessage(from, buffer, video, {quoted: ftrol, caption: 'Succes By : � Ryuuka Botz'})
 break
 case 'asupanbocil':
 if (!isUser) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
 ini = await fetchJson(`https://api-ryu.herokuapp.com/api/asupan/bocil?apikey=${ryukey}`)
 reply(mess.wait) 
 buffer = await getBuffer(ini.result.url)
-Ryuu.sendMessage(from, buffer, video, {quoted: ftrol, caption: 'Succes By : © Ryuuka Botz'})
+Ryuu.sendMessage(from, buffer, video, {quoted: ftrol, caption: 'Succes By : � Ryuuka Botz'})
 break
 case 'asupanghea':
 if (!isUser) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
 ini = await fetchJson(`https://api-ryu.herokuapp.com/api/asupan/ghea?apikey=${ryukey}`)
 reply(mess.wait) 
 buffer = await getBuffer(ini.result.url)
-Ryuu.sendMessage(from, buffer, video, {quoted: ftrol, caption: 'Succes By : © Ryuuka Botz'})
+Ryuu.sendMessage(from, buffer, video, {quoted: ftrol, caption: 'Succes By : � Ryuuka Botz'})
 break
 case 'asupanrika':
 if (!isUser) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
 ini = await fetchJson(`https://api-ryu.herokuapp.com/api/asupan/rikagusriani?apikey=${ryukey}`)
 reply(mess.wait) 
 buffer = await getBuffer(ini.result.url)
-Ryuu.sendMessage(from, buffer, video, {quoted: ftrol, caption: 'Succes By : © Ryuuka Botz'})
+Ryuu.sendMessage(from, buffer, video, {quoted: ftrol, caption: 'Succes By : � Ryuuka Botz'})
 break
 
 //Fitur Group
@@ -1255,12 +1255,12 @@ if ((args[0]) === 'on') {
 if (isWelkom) return reply('*welcome sudah aktif !!*')
  _welkom.push(from)
 fs.writeFileSync('./database/welcome.json', JSON.stringify(_welkom))
-reply(`Succes Welcome Telah On🌱`)
+reply(`Succes Welcome Telah On`)
 } else if ((args[0]) === 'off') {
 if (!isWelkom) return reply('*welcome sudah off sebelumnya !!*')
 _welkom.splice(from, 1)
 fs.writeFileSync('./database/welcome.json', JSON.stringify(_welkom))
-reply(`Succes Welcome Telah Off🍂`)
+reply(`Succes Welcome Telah Off`)
 } else {
 reply('*on untuk mengaktifkan, off untuk menonaktifkan*')
 }
@@ -1274,12 +1274,12 @@ if (args[0].toLowerCase() === 'enable'){
 if (isAntiLink) return reply(`Udah aktif`)
 antilink.push(from)
 fs.writeFileSync('./database/antilink.json', JSON.stringify(antilink))
-reply('Succes Antilink Telah Nyala🌱')
+reply('Succes Antilink Telah Nyala')
 } else if (args[0].toLowerCase() === 'disable'){
 let anu = antilink.indexOf(from)
 antilink.splice(anu, 1)
 fs.writeFileSync('./database/antilink.json', JSON.stringify(antilink))
-reply('Succes Antilink Telah Mati🍂')
+reply('Succes Antilink Telah Mati')
 } else {
 reply(`Pilih enable atau disable`)
 }
@@ -1392,7 +1392,7 @@ fixHeight,
 ])
 .on('error', () => reply(mess.eror))
 .on('exit', () => {
-Ryuu.sendMessage(from, fs.readFileSync('./media/nulis/images/buku/setelahkiri.jpg'), image, {thumbnail:Buffer.alloc(0),quoted: mek, caption: `Jangan Malas Lord. Jadilah siswa yang rajin ರ_ರ`})
+Ryuu.sendMessage(from, fs.readFileSync('./media/nulis/images/buku/setelahkiri.jpg'), image, {thumbnail:Buffer.alloc(0),quoted: mek, caption: `Jangan Malas Lord. Jadilah siswa yang rajin _`})
 
 })
 }
@@ -1421,7 +1421,7 @@ fixHeight,
 ])
 .on('error', () => reply(mess.eror))
 .on('exit', () => {
-Ryuu.sendMessage(from, fs.readFileSync('./media/nulis/images/buku/setelahkanan.jpg'), image, {thumbnail:Buffer.alloc(0),quoted: mek, caption: `Jangan Malas Lord. Jadilah siswa yang rajin ರ_ರ`})
+Ryuu.sendMessage(from, fs.readFileSync('./media/nulis/images/buku/setelahkanan.jpg'), image, {thumbnail:Buffer.alloc(0),quoted: mek, caption: `Jangan Malas Lord. Jadilah siswa yang rajin _`})
 
 })
 }
@@ -1450,7 +1450,7 @@ fixHeight,
 ])
 .on('error', () => reply(mess.eror))
 .on('exit', () => {
-Ryuu.sendMessage(from, fs.readFileSync('./media/nulis/images/folio/setelahkiri.jpg'), image, {thumbnail:Buffer.alloc(0),quoted: mek, caption: `Jangan Malas Lord. Jadilah siswa yang rajin ರ_ರ`})
+Ryuu.sendMessage(from, fs.readFileSync('./media/nulis/images/folio/setelahkiri.jpg'), image, {thumbnail:Buffer.alloc(0),quoted: mek, caption: `Jangan Malas Lord. Jadilah siswa yang rajin _`})
 
 })
 }
@@ -1479,7 +1479,7 @@ fixHeight,
 ])
 .on('error', () => reply(mess.eror))
 .on('exit', () => {
-Ryuu.sendMessage(from, fs.readFileSync('./media/nulis/images/folio/setelahkanan.jpg'), image, {thumbnail:Buffer.alloc(0),quoted: mek, caption: `Jangan Malas Lord. Jadilah siswa yang rajin ರ_ರ`})
+Ryuu.sendMessage(from, fs.readFileSync('./media/nulis/images/folio/setelahkanan.jpg'), image, {thumbnail:Buffer.alloc(0),quoted: mek, caption: `Jangan Malas Lord. Jadilah siswa yang rajin _`})
 
 })
 }
@@ -1682,11 +1682,11 @@ reply("Done Bwang")
 break
 case 'listcmd':
 if (!isOwner && !mek.key.fromMe) return reply(mess.only.owner)
-let teksnyee = `\`\`\`「 LIST CMD STIC 」\`\`\``
+let teksnyee = `\`\`\` LIST CMD STIC \`\`\``
 let cemde = [];
 for (let i of scommand) {
 cemde.push(i.id)
-teksnyee += `\n\n*❏ ID :* ${i.id}\n*❏ Cmd :* ${i.chats}`
+teksnyee += `\n\n* ID :* ${i.id}\n* Cmd :* ${i.chats}`
 }
 reply(teksnyee)
 break
@@ -1697,10 +1697,10 @@ if(budy.includes("@verif", "@verify","daftar")){
 if (isUser) return reply('Kamu sudah terdaftar di dalam database')
 addRegisterUser(sender, pushname, bio_user)
 fs.writeFileSync('./database/user.json', JSON.stringify(_user))
-teks = `*Success Verification 🎉*\n\n${a}📛 Nama  : ${pushname}\n#️⃣ Nomor : @${sender.split('@')[0]}\n💌 Bio: ${bio_user}${a}\n\n*Verification Di Database ${botname}*`
-footeregis = `Terima Kasih Telah Mendaftar 🤗\n© ${botname} By ${ownername}`
+teks = `*Success Verification *\n\n${a} Nama  : ${pushname}\n# Nomor : @${sender.split('@')[0]}\n Bio: ${bio_user}${a}\n\n*Verification Di Database ${botname}*`
+footeregis = `Terima Kasih Telah Mendaftar \n� ${botname} By ${ownername}`
 butregis = [
-{ buttonId: `${prefix}menu`, buttonText: { displayText: 'MENU 💌' }, type: 1 }
+{ buttonId: `${prefix}menu`, buttonText: { displayText: 'MENU ' }, type: 1 }
  ]
 sendButLocation(from, teks, footeregis, fakeRyuu, butregis, {contextInfo: { mentionedJid: [sender]
 }
